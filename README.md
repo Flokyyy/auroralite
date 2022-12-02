@@ -44,7 +44,7 @@
 - Using the command /update projects are able to change their subscription price afterwards.
 
 # 💸 Subscription Payment Process
-- Once you click on "Pay Subscription" AuroraLITE will automatically create a new channel for the royalty payment process. Click on "Start"
+- Once you click on "Pay Subscription" AuroraLITE will automatically create a new channel for the royalty payment process. 
 ![Screenshot (1222)](https://user-images.githubusercontent.com/68162827/205166660-6df6de8f-fe4f-4309-bb4d-54f509a80f2b.png)
 
 - AuroraLITE will then send you the main details for the payment processs.
