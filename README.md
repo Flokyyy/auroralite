@@ -26,7 +26,6 @@
 
 🔁 Automatic Role Updates
 - Each month subscription roles are automatically updated and removed so users need to repay in order to remain their access.
-
  
 # 💻 Installation
 
@@ -36,7 +35,7 @@
 ![Screenshot (1225)](https://user-images.githubusercontent.com/68162827/205166587-c2854250-536c-4705-a1f8-4fb92906f311.png)
 
 - Step 3: Create a new channel (e.g "subscription-payment") and type "+setup". 
-=> AuroraLITE will automatically post the payment message.
+- AuroraLITE will automatically post the payment message.
 ![Screenshot (1224)](https://user-images.githubusercontent.com/68162827/205166610-80e5ede5-90e5-4c18-be4a-14e139af8f31.png)
 
 - Step 4: Your finished! Please do a demo payment in order to test you setup your vault-wallet correctly. 
