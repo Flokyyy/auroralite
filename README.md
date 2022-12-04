@@ -11,9 +11,8 @@
 - Please only use this discord for the review or setup AuroraLITE inside your server by following the instructions below 
 
 # 1 Minute video overview
-[![Demo CountPages alpha](https://share.gifyoutube.com/KzB6Gb.gif)](https://www.youtube.com/watch?v=j8MraU73NDY)
 
-https://www.youtube.com/watch?v=j8MraU73NDY
+[link text](https://example.com/my-link "link title")
 
 # ⚙️ AuroraLITE Features
 
