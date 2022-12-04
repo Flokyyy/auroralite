@@ -11,6 +11,9 @@
 - Please only use this discord for the review or setup AuroraLITE inside your server by following the instructions below 
 
 # 1 Minute video overview
+
+[![Little red riding hood](http://i.imgur.com/7YTMFQp.png)](https://vimeo.com/3514904 "Little red riding hood - Click to Watch!")
+
 https://www.youtube.com/watch?v=j8MraU73NDY
 
 # ⚙️ AuroraLITE Features
