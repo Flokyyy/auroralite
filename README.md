@@ -12,9 +12,8 @@
 
 # 1 Minute video overview
 
-[![Little red riding hood](http://i.imgur.com/7YTMFQp.png)](https://vimeo.com/3514904 "Little red riding hood - Click to Watch!")
+[![Little red riding hood](http://i.imgur.com/7YTMFQp.png)](https://www.youtube.com/watch?v=j8MraU73NDY)
 
-https://www.youtube.com/watch?v=j8MraU73NDY
 
 # ⚙️ AuroraLITE Features
 
