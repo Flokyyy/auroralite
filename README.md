@@ -11,7 +11,7 @@
 - Please only use this discord for the review or setup AuroraLITE inside your server by following the instructions below 
 
 # 1 Minute video overview
-https://www.youtube.com/watch?v=j8MraU73NDY)
+https://www.youtube.com/watch?v=j8MraU73NDY
 
 # ⚙️ AuroraLITE Features
 
