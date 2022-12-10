@@ -1,16 +1,15 @@
 # 🚀 AuroraLITE
 
 - AuroraLITE is a subscription based revenue model for Solana projects.
-- Projects can offer their community a subscription that is purchasable inside their discord. 
-- If users decide to buy this subscription they will be granted a specific role(subscription role) inside the discord that the project selected before which is exclusive and limited to one per user.
-=> Using AuroraLITE projects can setup a unique subscription experience for their users and can receive a monthly income for their treasury. 
-
+- Projects can offer their community a subscription rank that is purchasable inside their discord to support the project by paying a monthly fee. 
+- If users decide to buy this subscription they will be granted a specific role(subscription role) inside the discord that the project selected before which offers for example exclusive content/access.
+=> Using AuroraLITE projects can setup a unique subscription experience for their users and can receive a monthly revenue. 
 
 # 💡 Demo
 - AuroraLITE can be tested inside our discord: https://discord.gg/q7pJcPgvKz 
 - Please only use this discord for the review or setup AuroraLITE inside your server by following the instructions below 
 
-# 1 Minute video overview
+# :tada: 1 Minute video overview
 https://www.youtube.com/watch?v=j8MraU73NDY
 
 # ⚙️ AuroraLITE Features
