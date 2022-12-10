@@ -27,7 +27,7 @@ https://www.youtube.com/watch?v=j8MraU73NDY
 - Each month subscription roles are automatically updated and removed so users need to repay in order to remain their access.
  
 # 💻 Installation
-
+- Below is the instruction to install AuroraLITE that is hosted by us. It's also possible to host AuroraLITE on your own. 
 - Step 1: Invite AuroraLITE to your discord https://discord.com/oauth2/authorize?permissions=8&scope=bot+applications.commands&client_id=1043580190703505489
 - Permissions for AuroraLITE are automatically assigned through the invite (Administrator), otherwise manually add them. 
 - Step 2: Use the /setup command and fill in the required data.
