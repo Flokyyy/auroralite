@@ -49,13 +49,13 @@ https://www.youtube.com/watch?v=j8MraU73NDY
 - AuroraLITE will then send you the main details for the payment processs.
 ![Screenshot (1223)](https://user-images.githubusercontent.com/68162827/205166688-6d8b59ae-3d8b-47e1-9d90-854737bfcecf.png)
 
-💰 Paid Subscription:
+# 💰 Paid Subscription:
 - If you paid the Subscription fee AuroraLITE will automatically detect this and will sent the subscription fee to the projects vault. 
 - AuroraLITE will provide the transaction for the funds transaction the the projects vault wallet.
 ![Screenshot (1226)](https://user-images.githubusercontent.com/68162827/205166706-20863972-8945-4f12-8c76-6b7e3f54ec00.png)
 - The user receives the previously selected subscription role and can now get all subscription feature.
 
-⛔ Subscription not Paid:
+# ⛔ Subscription not Paid:
 - If you didn't pay the Subscription we implemented a timeout with takes place after 7 minutes.
 
 # FAQ
