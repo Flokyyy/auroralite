@@ -5,6 +5,8 @@
 - If users decide to buy this subscription they will be granted a specific role(subscription role) inside the discord that the project selected before which offers for example exclusive content/access.
 => Using AuroraLITE projects can setup a unique subscription experience for their users and can receive a monthly revenue. 
 
+This project won the 1st place in the 2022 MagicEden Hackathon: https://blog.magiceden.io/winners-announcement-magic-eden-creator-monetization-hackathon
+
 # 💡 Demo
 - AuroraLITE can be tested inside our discord: https://discord.gg/q7pJcPgvKz 
 - Please only use this discord for the review or setup AuroraLITE inside your server by following the instructions below 
