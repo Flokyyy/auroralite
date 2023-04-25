@@ -47,56 +47,62 @@ public class AuroraLite {
 	  return mysql;
 	}
 
+	// This method connects to the MySQL database and creates the necessary tables
 	public static void connectMySQL() {
 	   mysql = new MySQL(MySQL.HOST, MySQL.DATABASE, MySQL.USER, MySQL.PASSWORD);
 	   mysql.update("CREATE TABLE IF NOT EXISTS auroraLite(SERVER text, AMOUNT double, ROLE long, VAULT text)");
 	   mysql.update("CREATE TABLE IF NOT EXISTS auroraLiteTransaction(UUID text, MEMBER text, TIMESTAMP long, AMOUNT double, SERVER text)");
 	}
+
 	
+	// This is the main method of the program. It sets up the Discord bot and initializes the commands
 	public static void main(String[] args) {
-		try {
-			AuroraLite.connectMySQL(); // Connect to database
-		} catch (Exception e) {
-			System.out.println("" + e.getMessage());
-			System.exit(1);
-		}
-		
-		builder = JDABuilder.createDefault(""); // Discord Bot Secret Key
-		builder.enableIntents(GatewayIntent.GUILD_MEMBERS, GatewayIntent.GUILD_PRESENCES, GatewayIntent.GUILD_INVITES);
-		builder.setStatus(OnlineStatus.ONLINE);
-		
-		builder.addEventListeners(new CommandListener());
-
-		OptionData option1 = new OptionData(OptionType.ROLE, "role", "choose the role that the user gets assigned once the subscription is paid", true);
-		OptionData option2 = new OptionData(OptionType.STRING, "amount", "set the subscription amount (e.g 0.1 SOL)", true);
-		OptionData option3 = new OptionData(OptionType.STRING, "vault-wallet", "set vault wallet where all funds are being sent to", true);
-		
-		List<CommandData> commandData = new ArrayList<>();
-	    commandData.add(Commands.slash("setup", "Set up the Aurora LITE system on your discord").addOptions(option1, option2, option3));
-	    
-	    OptionData option4 = new OptionData(OptionType.STRING, "amount", "update the subscription price", true);
-	    commandData.add(Commands.slash("update", "Update the subscription price").addOptions(option4));
-
-		try {
-			jda = builder.build(); // Start jda
-		} catch (LoginException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-		
-		try {
-			Thread.sleep(2000);
-		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		} 
-
-        jda.updateCommands().addCommands(commandData).queue();	
-
+	try {
+		AuroraLite.connectMySQL(); // Connect to database
+	} catch (Exception e) {
+		System.out.println("" + e.getMessage());
+		System.exit(1);
+	}
 	
-        // This timer functions is to check if a users subscription time frame (30d) is over so we remove their roles.
-        Timer timer = new Timer();
-		TimerTask timerTask = new TimerTask() {
+	builder = JDABuilder.createDefault(""); // Discord Bot Secret Key
+	builder.enableIntents(GatewayIntent.GUILD_MEMBERS, GatewayIntent.GUILD_PRESENCES, GatewayIntent.GUILD_INVITES);
+	builder.setStatus(OnlineStatus.ONLINE);
+	
+	builder.addEventListeners(new CommandListener());
+
+	// Create command options for setup command
+	OptionData option1 = new OptionData(OptionType.ROLE, "role", "choose the role that the user gets assigned once the subscription is paid", true);
+	OptionData option2 = new OptionData(OptionType.STRING, "amount", "set the subscription amount (e.g 0.1 SOL)", true);
+	OptionData option3 = new OptionData(OptionType.STRING, "vault-wallet", "set vault wallet where all funds are being sent to", true);
+	
+	// Add setup command to the list of command data
+	List<CommandData> commandData = new ArrayList<>();
+   	 commandData.add(Commands.slash("setup", "Set up the Aurora LITE system on your discord").addOptions(option1, option2, option3));
+    
+    	// Create command options for update command
+    	OptionData option4 = new OptionData(OptionType.STRING, "amount", "update the subscription price", true);
+    	// Add update command to the list of command data
+    	commandData.add(Commands.slash("update", "Update the subscription price").addOptions(option4));
+
+	try {
+		jda = builder.build(); // Start jda
+	} catch (LoginException e) {
+		e.printStackTrace();
+	}
+	
+	// Wait for 2 seconds before adding commands
+	try {
+		Thread.sleep(2000);
+	} catch (InterruptedException e) {
+		e.printStackTrace();
+	} 
+
+	// Add commands to the server
+    	jda.updateCommands().addCommands(commandData).queue();	
+
+   	// This timer functions is to check if a user's subscription time frame (30d) is over so we remove their roles.
+   	Timer timer = new Timer();
+	TimerTask timerTask = new TimerTask() {
 			@Override
 			public void run() {
 				try {
@@ -122,9 +128,9 @@ public class AuroraLite {
 						 
 					    if (diff <= -30) { // Timestamp is older than 30 days
 					    	  
-					    	  try { // New try catch in case the role is invaild
-					    		  Guild g = jda.getGuildById(serverID); //Getting the old server guild by using the saved server uuid
-					    		  Role role = g.getRoleById(roleID); //Getting the subscription role from the database
+					    	  try { // Catch errors in case the role is invaild
+					    		  Guild g = jda.getGuildById(serverID); // Getting the old server guild by using the saved server uuid
+					    		  Role role = g.getRoleById(roleID); // Getting the subscription role from the database
 					    		  
 					    		  if(role == null) {
 					    			MySQLStatements.removeEntry(uuid); // Removing entry from database
@@ -142,7 +148,7 @@ public class AuroraLite {
 					    			return;
 					    		  }
 					    			  
-					    		  if(!m.getRoles().contains(role)) { //If the user doesn't got the role anymore
+					    		  if(!m.getRoles().contains(role)) { // If the user doesn't has the role anymore
 					    			System.out.println("The user " + m.getId() + " does not have the role: " + role.getId() + " anymore so we can't remove it :(");
 					    			MySQLStatements.removeEntry(uuid); // Removing entry from database
 					    			return;
