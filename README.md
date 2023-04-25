@@ -1,4 +1,4 @@
-# 🚀 AuroraLITE
+# AuroraLITE
 
 - AuroraLITE is a subscription based revenue model for Solana projects.
 - Projects can offer their community a subscription rank that is purchasable inside their discord to support the project by paying a monthly fee (SOL). 
@@ -7,28 +7,28 @@
 
 This project won the 1st place in the 2022 MagicEden Hackathon: https://blog.magiceden.io/winners-announcement-magic-eden-creator-monetization-hackathon
 
-# 💡 Demo
+# Demo
 - AuroraLITE can be tested inside our discord: https://discord.gg/q7pJcPgvKz 
 - Please only use this discord for the review or setup AuroraLITE inside your server by following the instructions below 
 
 # :tada: 1 Minute video overview
 https://www.youtube.com/watch?v=j8MraU73NDY
 
-# ⚙️ AuroraLITE Features
+# ⚙AuroraLITE Features
 
-🔑 1-click setup
+ 1-click setup
 - AuroraLITE works globally on any discord server and you can install it with just one command in a few minutes. 
 
-🔋 Fully automatic
+Fully automatic
 - AuroraLITE works fully automatic and therefore once installed there's no further work your you.
 
-🔖 Automatic Role Assigment
+Automatic Role Assigment
 - Prior in your setup you can set a role that this automatically assigned to the users once the royalty is paid. 
 
-🔁 Automatic Role Updates
+Automatic Role Updates
 - Each month subscription roles are automatically updated and removed so users need to repay in order to remain their access.
  
-# 💻 Installation
+# Installation
 - Below is the instruction to install AuroraLITE that is hosted by us. It's also possible to host AuroraLITE on your own. 
 - Step 1: Invite AuroraLITE to your discord https://discord.com/oauth2/authorize?permissions=8&scope=bot+applications.commands&client_id=1043580190703505489
 - Permissions for AuroraLITE are automatically assigned through the invite (Administrator), otherwise manually add them. 
@@ -41,7 +41,7 @@ https://www.youtube.com/watch?v=j8MraU73NDY
 
 - Step 4: Your finished! Please do a demo payment in order to test you setup your vault-wallet correctly. 
 
-# 🔁 Update Subscription Amount
+# Update Subscription Amount
 - Using the command /update projects are able to change their subscription price afterwards.
 
 # 💸 Subscription Payment Process
@@ -51,13 +51,13 @@ https://www.youtube.com/watch?v=j8MraU73NDY
 - AuroraLITE will then send you the main details for the payment processs.
 ![Screenshot (1223)](https://user-images.githubusercontent.com/68162827/205166688-6d8b59ae-3d8b-47e1-9d90-854737bfcecf.png)
 
-# 💰 Paid Subscription:
+# Paid Subscription:
 - If you paid the Subscription fee AuroraLITE will automatically detect this and will sent the subscription fee to the projects vault. 
 - AuroraLITE will provide the transaction for the funds transaction the the projects vault wallet.
 ![Screenshot (1226)](https://user-images.githubusercontent.com/68162827/205166706-20863972-8945-4f12-8c76-6b7e3f54ec00.png)
 - The user receives the previously selected subscription role and can now get all subscription feature.
 
-# ⛔ Subscription not Paid:
+# Subscription not Paid:
 - If you didn't pay the Subscription we implemented a timeout with takes place after 7 minutes.
 
 # FAQ
