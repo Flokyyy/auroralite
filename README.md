@@ -14,7 +14,7 @@ This project won the 1st place in the 2022 MagicEden Hackathon: https://blog.mag
 # 1 Minute video overview
 https://www.youtube.com/watch?v=j8MraU73NDY
 
-# ⚙AuroraLITE Features
+# AuroraLITE Features
 
  1-click setup
 - AuroraLITE works globally on any discord server and you can install it with just one command in a few minutes. 
@@ -44,7 +44,7 @@ Automatic Role Updates
 # Update Subscription Amount
 - Using the command /update projects are able to change their subscription price afterwards.
 
-# 💸 Subscription Payment Process
+# Subscription Payment Process
 - Once you click on "Pay Subscription" AuroraLITE will automatically create a new channel for the royalty payment process.
 ![Screenshot (1222)](https://user-images.githubusercontent.com/68162827/205166660-6df6de8f-fe4f-4309-bb4d-54f509a80f2b.png)
 
