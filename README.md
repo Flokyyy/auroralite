@@ -11,7 +11,7 @@ This project won the 1st place in the 2022 MagicEden Hackathon: https://blog.mag
 - AuroraLITE can be tested inside our discord: https://discord.gg/q7pJcPgvKz 
 - Please only use this discord for the review or setup AuroraLITE inside your server by following the instructions below 
 
-# :tada: 1 Minute video overview
+# 1 Minute video overview
 https://www.youtube.com/watch?v=j8MraU73NDY
 
 # ⚙AuroraLITE Features
